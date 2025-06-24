@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-image: url('Tumblr.jpeg'); /* tu imagen de fondo */
+  background-size: cover; /* que cubra toda la pantalla */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* para que no se mueva al hacer scroll */
+}
+
+.encabezado {
+  background-color: #D5451B;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.encabezado h1 {
+  font-family: 'Allura', cursive;
+  font-size: 6rem;
+  color: #F4E7E1;
+  margin: 0;
+  text-shadow: 2px 2px 4px #521C0D;
+}
+
+/* Barra de navegación */
+.barra-nav {
+  background: linear-gradient(to right, #521C0D, #7A2D12);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.barra-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 35px;
+}
+
+.barra-nav li {
+  position: relative;
+}
+
+.barra-nav a {
+  display: inline-block;
+  background: linear-gradient(90deg, #FF9B45, #D5451B);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.barra-nav a:hover {
+  background: linear-gradient(90deg, #D5451B, #FF9B45);
+  transform: scale(1.08);
+  color: #491507;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  color: #fff;
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.form-container h2 {
+  color: #f3f3f3;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #FF9B45;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background-color: #D5451B;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info .box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.icon {
+  font-size: 30px;
+  color: #FF9B45;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+footer {
+  background-color: #521C0D;
+  color: #F4E7E1;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 6px 0;
+}
+
+footer a {
+  color: #F4E7E1;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #F4E7E1;
+}
+.redes-sociales {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-red-social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.btn-red-social img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Colores personalizados */
+.instagram {
+  background-color: #FF9B45;
+}
+
+.instagram:hover {
+  background-color: #D5451B;
+}
+
+.tiktok {
+  background-color: #521C0D;
+}
+
+.tiktok:hover {
+  background-color: #D5451B;
+}
+.quienes-somos p {
+  color: white;}

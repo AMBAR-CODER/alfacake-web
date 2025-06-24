@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Productos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="otros.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Productos</h1>
+  </header>
+
+  <nav class="barra-nav">
+    <ul>
+      <li><a href="Inicio.html">Inicio</a></li>
+      <li><a href="INDEX.HTML">¿Quiénes somos?</a></li>
+      <li><a href="otro.html">Productos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Modal para elegir región y forma de pago (único) -->
+  <div id="modalRegion" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <h2>Seleccioná tu región</h2>
+      <select id="selectRegionModal">
+        <option value="">-- Elegí --</option>
+        <option value="AMERICA">América</option>
+        <option value="EUROPA">Europa</option>
+        <option value="ASIA">Asia</option>
+      </select>
+
+      <h3>Formas de pago disponibles</h3>
+      <div id="formasPagoContainer">Seleccioná una región para ver opciones</div>
+
+      <button id="btnGuardarRegion" disabled>Guardar selección</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="carousel">
+      <button class="prev" onclick="mover(-1)">&#10094;</button>
+      <div class="carousel-container">
+
+        <div class="producto active">
+          <img src="1000078948.png" alt="Producto 1" />
+          <h3>Alfajor RED VELVET</h3>
+          <p>Bizcocho de cacao rojo intenso, con un corazón cremoso de vainilla, todo recubierto de chocolate blanco</p>
+          <p class="precio"><span class="icono-precio"></span> $90 por unidad</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          <button class="btn-region">Elegir región y forma de pago</button>
+        </div>
+
+        <div class="producto">
+          <img src="1000079042.png" alt="Producto 2" />
+          <h3>Alfajor BOM BOM</h3>
+          <p>Un alfajor de apariencia intensa y tentadora: cobertura de chocolate marrón con un relleno brillante y cremoso del mismo tono.</p>
+          <p class="precio"><span class="icono-precio"></span> $90 por unidad</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          <button class="btn-region">Elegir región y forma de pago</button>
+        </div>
+
+        <div class="producto">
+          <img src="1000078950.png" alt="Producto 3" />
+          <h3>Alfajor Lemon Pie</h3>
+          <p>El balance perfecto entre dulzura y acidez. Relleno con crema de limón y un toque de merengue suave, este alfajor refresca el paladar y deja una sensación ligera y deliciosa. Ideal para los amantes del limón.</p>
+          <p class="precio"><span class="icono-precio"></span> $90 por unidad</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          <button class="btn-region">Elegir región y forma de pago</button>
+        </div>
+
+        <div class="producto">
+          <img src="1000079043.png" alt="Producto 4" />
+          <h3>Alfajor Chocotorta</h3>
+          <p>Inspirado en la clásica torta argentina, este alfajor combina galletas de chocolate y suave crema de dulce de leche con queso, todo envuelto en una cobertura que se derrite en la boca.</p>
+          <p class="precio"><span class="icono-precio"></span> $60 por unidad</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          <button class="btn-region">Elegir región y forma de pago</button>
+        </div>
+
+        <div class="producto">
+          <img src="1000080116.png" alt="Producto 5" />
+          <h3>Alfajor Berry Cheesecake</h3>
+          <p>Una fusión irresistible entre suavidad y frescura. Relleno cremoso con sabor a cheesecake y frutos rojos, cubierto con una capa delicada de chocolate blanco.</p>
+          <p class="precio"><span class="icono-precio"></span> $75 por unidad</p>
+          <button class="agregar-carrito">Agregar al carrito</button>
+          <button class="btn-region">Elegir región y forma de pago</button>
+        </div>
+
+      </div>
+      <button class="next" onclick="mover(1)">&#10095;</button>
+    </div>
+  </main>
+
+  <script src="region.js"></script>
+  <script src="produc.js"></script>
+</body>
+</html>

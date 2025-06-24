@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucks Frappuccino UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f2f8f6;
+    }header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+.highlight-text {
+  text-align: center;
+  color: #008248;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+}
+
+.frapp-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.main-card {
+  background: #00704A;
+  color: white;
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.main-card select, .main-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-card select {
+  background-color: #f5f5f5;
+}
+
+.main-card button {
+  background-color: white;
+  color: #00704A;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Starbucks_Coffee_Logo.svg/1200px-Starbucks_Coffee_Logo.svg.png" alt="Starbucks Logo">
+    </div>
+    <nav>
+      <a href="#">Coffee</a>
+      <a href="#">Tea</a>
+      <a href="#">Menu</a>
+    </nav>
+  </header> <div class="highlight-text">The happiest hour of the year</div> <div class="frapp-container">
+    <div class="card">
+      <img src="https://i.imgur.com/9YjMxmf.png" alt="Frappuccino">
+      <h3>Midnight Mint Mocha Frappuccino</h3>
+      <p>Calories: 350<br>Fat: 15g</p>
+    </div><div class="card main-card">
+  <img src="https://i.imgur.com/BkQ9oNv.png" alt="Frappuccino">
+  <h3>Midnight Mint Mocha Frappuccino</h3>
+  <label>Size:</label>
+  <select>
+    <option>Select a size</option>
+    <option>Tall</option>
+    <option>Grande</option>
+    <option>Venti</option>
+  </select>
+  <label>Milk:</label>
+  <select>
+    <option>Select a milk type</option>
+    <option>Whole
